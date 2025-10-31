@@ -1,0 +1,24 @@
+1
+SELECT nazwa, cena 
+FROM Produktu
+WHERE poducent_id IN (1, 3);
+
+2
+SELECT nazwa, cena
+FROM Produkty
+WHERE cena BETWEEN 200 AND 1000;
+
+3
+SELECT imie
+FROM Producenci
+WHERE kraj LIKE 'P%';
+
+4
+SELECT nazwa, opis
+FROM Produkty
+WHERE opis IS NULL;
+
+5
+SELECT *
+FROM Produkty
+WHERE nazwa LIKE 'Pro%' AND cena NOT BETWEEN 500 AND 2000;
